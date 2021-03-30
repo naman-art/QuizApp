@@ -1,0 +1,87 @@
+<body style="background-color: powderblue">
+  <div style="background-color: powderblue">
+    <!--Navigation bar starts here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" [routerLink]="['']">Quiz Application</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="" [routerLink]="['/home']"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" [routerLink]="['/about']">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="" [routerLink]="['/contact']"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navigation Bar ends here-->
+
+    <!--Instruction Card starts here-->
+    <div class="card ins">
+      <div class="card-header text-center">
+        <h1>Welcome to the Instruction section.</h1>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title text-center">
+          Please read the following instructions before procedding to test
+        </h2>
+        <ol style="list-style-type: lower-roman" class="card-text">
+          <div style="margin-left: 10%">
+            <li style="font-weight: bolder">
+              You will be given <strong>5 seconds</strong> to choose your
+              favourite quiz from the given drop down list at the top right
+              corner else <em>HTML Quiz</em> will be loaded by default.
+            </li>
+            <li>
+              Upon selecting the quiz you will be redirected to quiz section.
+            </li>
+            <li>Only one answer is correct</li>
+            <li>
+              You can review the test anytime between the test.
+              <ul>
+                <li>One shown in Yellow are pending once</li>
+                <li>One shown in green are attempted one</li>
+              </ul>
+            </li>
+            <li>Attempting all the question is not required</li>
+            <li>
+              Upon submission you will be redirected to page consisiting of your
+              marks and percentage
+            </li>
+            <li>You will get an option to see detailed result</li>
+          </div>
+        </ol>
+        <!--Start and exit buttons-->
+        <div class="card-footer text-center button-group">
+          <button class="btn btn-success start" [routerLink]="['/quiz']">
+            Start Test
+          </button>
+          <button class="btn btn-danger quit" [routerLink]="['/home']">
+            Exit Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Instruction Section ends here-->
+  </div>
+</body>

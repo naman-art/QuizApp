@@ -1,0 +1,159 @@
+<!--nav bar starts here-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="">Quiz Application</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="" [routerLink]="['/home']">Home</a>
+      </li>
+      <!-- <span class="sr-only">(current) </span> -->
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['/about']" href=""
+          >About Us</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/contact']" href="">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--navbar ends here-->
+<div style="background-color: powderblue" class="container mt-3">
+  <h1 align="center"><strong>Overview of Quiz App</strong></h1>
+  <div class="row justify-content-center">
+    <div class="card mx-4" style="width: 18rem">
+      <img
+        src="https://cdn.dribbble.com/users/775860/screenshots/4143735/kr_founded.jpg?compress=1&resize=400x300"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Founded in 2013</h5>
+        <p class="card-text">
+          This initiative was brought by Naman Singh to serve and provide
+          knowledge to millions of people.
+        </p>
+        <a href="#" class="btn btn-primary">Go to Home</a>
+      </div>
+    </div>
+  </div>
+  <div class="container my-3">
+    <h2>Details About Quiz App are mentioned here</h2>
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How We Started
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            We earlier used to provide quizes in only javascript domain but as
+            the new technologies started emerging we have excel our services so
+            that people can enhance their knowledge about the trending
+            technologies.
+          </div>
+        </div>
+      </div>
+      <!----->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Who is the Owner Of Quiz Application
+              </button>
+            </h2>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Naman Singh is the owner of the quiz application
+            </div>
+          </div>
+        </div>
+
+        <!---->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  How To Download the Quiz App?
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                You can simply download it from play store(Android) and App
+                store(Iphone).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <hr />
+    <p class="float-right"><a href="#">Go to home</a></p>
+    <p>© 2013-2021 QuizApplication</p>
+    <hr />
+  </footer>
+</div>

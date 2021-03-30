@@ -1,0 +1,367 @@
+{
+  "id": 1,
+  "name": "Angular Quiz",
+  "description": "Angular Quiz (Basic Multiple Choice Questions for Angular Developers)",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "Which community Angular JS belongs to?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Twitter",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Facebook",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Microsoft",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Google",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1011,
+      "name": "What is a controller in MVC?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. It is a software Code that stores the data",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. It is a software Code that controls the interactions between the Model and View",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. It is a software Code that renders the user interface",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1012,
+      "name": "Which of the followings are validation directives?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. ng-required",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. ng-minlength",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. ng-pattern",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. All of the above",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1013,
+      "name": "Which components can be injected as a dependency in AngularJS?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Application Module",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. constant",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. value",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. factory",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1014,
+      "name": "Who is sometimes called as Father of AngularJS?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Brad Green",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Igor Minor",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Misko Hevery",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Brian Ford",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1015,
+      "name": "Which of the following is true about AngularJS expressions?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Expressions behave in same way as ng-bind directives",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Expressions are used to bind application data to html",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Expressions are written inside double braces like {{ expression}}",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. All of these",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1016,
+      "name": "AngularJS module can be created using?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. angular.module();",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. var myModule = new module();",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. module.create();",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. angular.create()",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1017,
+      "name": "Angular initializes based upon which of the following scenario?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. DOMContentLoaded event happens",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. document.readyState is set to complete",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Both of the above",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1018,
+      "name": "What angular function is used to manually start up an angular application??",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. angular.bootstrap",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. angular.element",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. angular.copy",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " c]. None of these",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1019,
+      "name": "What are various possible prefixes such as 'ng-' using which Angular directives (for example, ng-app) can be defined?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. 'ng-', 'data-ng-', 'ng:'",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. 'ng-'",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. 'ng-', 'data-ng-', 'ng:', 'x-ng-'",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. 'ng-', 'data-ng-','x-ng-",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    }
+  ]
+}

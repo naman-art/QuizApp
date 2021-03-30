@@ -1,0 +1,367 @@
+{
+  "id": 1,
+  "name": "HTML Quiz",
+  "description": "Html Quiz (contains tags, attributes, forms etc.)",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "HTML stands for",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. HighText Machine Language",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. HyperText and links Markup Language",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. HyperText Markup Language",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of these",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1011,
+      "name": "The correct sequence of HTML tags for starting a webpage is -",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Head, Title, HTML, body",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. HTML, Body, Title, Head",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. HTML, Head, Body, Title",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. HTML, Head, Title, Body",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1012,
+      "name": " What are the types of unordered or bulleted list in HTML?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. disc, square, triangle",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. disc, circle, square",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. polygon, triangle, circle",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. All of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1013,
+      "name": "An HTML program is saved by using the ____ extension.",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. .ht",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. .hml",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. .html",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": " Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1014,
+      "name": "  A program in HTML can be rendered and read by ",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Web browser",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Server",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Interpreter",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1015,
+      "name": "The tags in HTML are",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. case-sensitive",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. in upper case",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Not case sensitive",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. in lowercase",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1016,
+      "name": "HTML tags are surrounded by which type of brackets.",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Curly",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Round",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Squart",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Angle",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1017,
+      "name": "Which of the following tag is used to add rows in the table?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. <td> and </td>",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. <th> and </th>",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. <tr> and </tr>",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1018,
+      "name": "HTML is what type of language ?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Scripting Language",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Markup Language",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Programming Language",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Programming Language",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1019,
+      "name": "How more than one option can be selected in drop down?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Use of multiple attribute inside <option> tag",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Use of multiple attribute inside <select> tag",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. use of multiple attribute inside <text> tag",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. It is not possible to select more than one option in drop down",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    }
+  ]
+}

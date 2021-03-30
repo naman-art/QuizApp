@@ -1,0 +1,2 @@
+Step 1- open the QuizApp folder in vscode and then on terminal type "npm install"
+Step 2- type "ng serve --o"

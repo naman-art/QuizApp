@@ -1,0 +1,305 @@
+<body style="background-color: powderblue">
+  <!--Navigation bar starts here-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" [routerLink]="['']">Quiz Application</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="" [routerLink]="['/home']"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" [routerLink]="['/about']">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <!--  -->
+          <a class="nav-link" href="" [routerLink]="['/contact']">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navigation bar ends here-->
+
+  <!--Quiz loads here-->
+  <div class="row">
+    <div class="col-6">
+      <h1>Quiz Application</h1>
+    </div>
+    <div class="col-6 text-right">
+      Select Quiz:
+      <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
+        <option *ngFor="let quiz of quizes" [value]="quiz.id">
+          {{ quiz.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <!--Quiz loading is finished-->
+
+  <!--Question is displayed on the screen-->
+  <div id="quiz">
+    <h2 class="text-center font-weight-normal">{{ quiz.name }}</h2>
+    <hr />
+
+    <div *ngIf="mode == 'quiz' && quiz">
+      <div *ngFor="let question of filteredQuestions">
+        <div class="badge badge-info">
+          Question {{ pager.index + 1 }} of {{ pager.count }}.
+        </div>
+        <div *ngIf="config.duration" class="badge badge-info float-right">
+          Time: {{ ellapsedTime }} / {{ duration }}
+        </div>
+        <h3 class="font-weight-normal">
+          {{ pager.index + 1 }}.
+          <span [innerHTML]="question.name"></span>
+        </h3>
+        <div class="row text-left options">
+          <div class="col-6" *ngFor="let option of question.options">
+            <div class="option">
+              <br />
+              <label class="font-weight-normal" [attr.for]="option.id">
+                <input
+                  id="{{ option.id }}"
+                  type="checkbox"
+                  [(ngModel)]="option.selected"
+                  (change)="onSelect(question, option)"
+                />
+                {{ option.name }} </label
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--Four blue colored buttons first, previous, next and last-->
+      <div class="text-center">
+        <button
+          class="btn btn-default"
+          *ngIf="config.allowBack"
+          (click)="goTo(0)"
+        >
+          First
+        </button>
+        <button
+          class="btn btn-default"
+          *ngIf="config.allowBack"
+          (click)="goTo(pager.index - 1)"
+        >
+          Prev
+        </button>
+        <button class="btn btn-default" (click)="goTo(pager.index + 1)">
+          Next
+        </button>
+        <button
+          class="btn btn-default"
+          *ngIf="config.allowBack"
+          (click)="goTo(pager.count - 1)"
+        >
+          Last
+        </button>
+        <!--<pagination *ngIf="config.showPager" direction-links="false" total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()"></pagination>-->
+      </div>
+      <hr />
+      <!--Three yellow coloured buttons Quiz , Review and Submit -->
+      <div align="center">
+        <button class="btn btn-warning" (click)="mode = 'quiz'">Quiz</button>
+        <button class="btn btn-info" (click)="mode = 'review'">Review</button>
+        <button class="btn btn-primary" (click)="onSubmit()">
+          Submit Quiz
+        </button>
+      </div>
+    </div>
+
+    <!--Review starts here-->
+    <div *ngIf="mode === 'review'">
+      <h1 id="reviewheading">{{ quiz.name }} Review mode</h1>
+    </div>
+
+    <div class="row" *ngIf="mode == 'review'">
+      <!-- Moving to question on clicking -->
+      <div
+        class="col-4 cursor-pointer"
+        *ngFor="let question of quiz.questions; let index = index"
+      >
+        <div
+          (click)="goTo(index)"
+          class="p-3 mb-2 {{
+            isAnswered(question) == 'Answered' ? 'bg-success' : 'bg-warning'
+          }}"
+        >
+          {{ index + 1 }}. {{ isAnswered(question) }}
+        </div>
+      </div>
+      <div>
+        <br /><br />
+        <br /><br /><br /><br /><br /><br />
+        <div align="center" style="margin-left: 200px">
+          <button class="btn btn-warning" (click)="mode = 'quiz'">Quiz</button>
+
+          <button class="btn btn-primary" (click)="onSubmit()">
+            Submit Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Ends -->
+
+    <!-- Detail-Result -->
+
+    <div class="result" *ngIf="mode == 'detailresult'">
+      <h2 style="text-align: center">Quiz Detailed Result</h2>
+      <!-- Retry button -->
+      <div class="container-fluid row" style="text-align: center">
+        <div class="col-md-12">
+          <h4 class="alert alert-info text-center">
+            To take test again
+            <button
+              [routerLink]="['/instr']"
+              class="btn btn-outline-primary"
+              style="text-align: cente; color: black"
+            >
+              Click here
+            </button>
+          </h4>
+        </div>
+      </div>
+
+      <!-- Loop for result-questions -->
+      <div *ngFor="let question of quiz.questions; let index = index">
+        <div class="result-question">
+          <h5 id="question-name">{{ index + 1 }}) {{ question.name }}</h5>
+          <div class="row">
+            <div class="col-6" *ngFor="let Option of question.options">
+              <input
+                id="{{ Option.id }}"
+                type="checkbox"
+                disabled="disabled"
+                [(ngModel)]="Option.selected"
+              />
+              {{ Option.name }}
+            </div>
+          </div>
+          <div
+            class="p-1 m-2 alert {{
+              isCorrect(question) == 'correct'
+                ? 'alert-success'
+                : 'alert-danger'
+            }}"
+          >
+            Your answer is {{ isCorrect(question) }}.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed Result Ends -->
+
+    <!-- Score Sheet -->
+    <div class="score text-center" *ngIf="mode === 'result'">
+      <h2>Your Performance report is mentioned below:-</h2>
+      <div style="height: 10%">
+        <canvas
+          baseChart
+          height="40vh"
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType"
+        >
+        </canvas>
+      </div>
+
+      <div style="background-color: powderblue">
+        <br />
+        <div style="font-size: large; background-color: powderblue">
+          Your score is :- {{ (correctans / 10) * 100 }}%
+
+          <ul class="list-group" style="background-color: powderblue">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+              style="background-color: powderblue"
+            >
+              Correct Answers
+              <span
+                class="badge bg-primary rounded-pill"
+                style="color: white"
+                >{{ correctans }}</span
+              >
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+              style="background-color: powderblue"
+            >
+              Incorrect/Unattempted Answers
+              <span
+                class="badge bg-primary rounded-pill"
+                style="color: white"
+                >{{ 10 - correctans }}</span
+              >
+            </li>
+          </ul>
+
+          <!------------------------>
+
+          <!------------------------>
+          <div>
+            <h2 style="background-color: powderblue">
+              To see your detailed result
+              <button
+                style="color: white"
+                class="btn btn-outline-primary"
+                (click)="onDetailresult()"
+              >
+                Click Here
+              </button>
+            </h2>
+          </div>
+          <!------------To display correct answers-->
+          <div style="background-color: powderblue">
+            <button (click)="displayResult()" class="btn btn-secondary">
+              Click here to see answers
+            </button>
+            <div class="row">
+              <div
+                style="margin-top: 2%"
+                *ngFor="let ans of disans; let index = index"
+              >
+                <div *ngIf="index < 5">
+                  <ul>
+                    <li>{{ index + 1 }} : {{ ans }} ||</li>
+                  </ul>
+                </div>
+                <div *ngIf="index >= 5 && index != 9">
+                  <ul>
+                    <li>{{ index + 1 }} : {{ ans }} ||</li>
+                  </ul>
+                </div>
+                <div *ngIf="index == 9">
+                  <ul>
+                    <li>{{ index + 1 }} : {{ ans }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scoresheet ends -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

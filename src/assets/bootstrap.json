@@ -1,0 +1,367 @@
+{
+  "id": 1,
+  "name": "Bootstrap Quiz",
+  "description": "Bootstrap Quiz (Basic Multiple Choice Questions for Bootstrap Developers)",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "Glyphicons is mainly used for?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Slideshow",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Graphic Images",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Animation",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Providing Different Icons",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1011,
+      "name": "Which of the following is correct about Bootstrap Jumbotron?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. This Component Can Optionally Increase The Size Of Headings And Add A Lot Of Margin For Landing Page Content.",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. To Use The Jumbotron:- Create A Container With The Class Of .jumbotron",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Both of them",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1012,
+      "name": "Which class indicates a Dropdown Menu?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. .dropdown",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. .select",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. .dropdown-list",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. .dropup-list",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1013,
+      "name": "Bootstrap's Grid system allows upto?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. 6 Columns Across The Page",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. 8 Columns Across The Page",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. 12 Columns Across The Page",
+          "isAnswer": true
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. 24 Columns Across The Page",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1014,
+      "name": "Default size of H5 Bootstrap heading?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. 14px",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. 16px",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. 18px",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. 20px",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1015,
+      "name": "The Bootstrap Class Md means for",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Desktop",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Tablets",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Phones",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Larger Desktops",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1016,
+      "name": "Which of the following Contextual class is used for warning purpose?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. .active",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. .warning",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. .danger",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. All the above",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1017,
+      "name": "Which Plugin is used to cycle through elements, like a slideshow",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Orbit",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. Scrollspy",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. Slideshow",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Carousel",
+          "isAnswer": true
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1018,
+      "name": "Which of the following class is used to create a button as a link in bootstrap?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. .btn-hyperlink",
+          "isAnswer": false
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. .btn-link",
+          "isAnswer": true
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. .btn-anchor",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. None of these",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    },
+    {
+      "id": 1019,
+      "name": "Which class creates a list of items?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": " a]. Lst-group",
+          "isAnswer": true
+        },
+        {
+          "id": 1056,
+          "questionId": 1010,
+          "name": " b]. List-group",
+          "isAnswer": false
+        },
+        {
+          "id": 1057,
+          "questionId": 1010,
+          "name": " c]. List-grp",
+          "isAnswer": false
+        },
+        {
+          "id": 1058,
+          "questionId": 1010,
+          "name": " d]. Menu-group",
+          "isAnswer": false
+        }
+      ],
+      "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+      }
+    }
+  ]
+}
